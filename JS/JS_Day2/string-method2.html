@@ -1,0 +1,35 @@
+<html>
+<script>
+    let str1 = "Aကhow are you how";
+    console.log("charAt(0) ", str1.charAt(0));
+    console.log("charAt(10) ", str1.charAt(10));
+    console.log("At(5) ", str1.at(5));
+
+    // နောက်ကနေရေတွက် ရင် ၂ လုံးမြောက်
+    console.log("At(-2) ", str1.at(-2));
+
+    console.log("charCodeAt(10) ", str1.charCodeAt(10));
+    console.log("charCodeAt(0) ", str1.charCodeAt(0));
+    console.log("charCodeAt(1) ", str1.charCodeAt(1));
+
+    let kaGyi = str1.charCodeAt(1);
+    let strKhaKway = String.fromCharCode(kaGyi + 1);
+    console.log("Kha Kway ", strKhaKway);
+
+    console.log("'hello'.concat('world'): ", 'hello'.concat('world'));
+    console.log("str1.endWith('you') ", str1.endsWith('you'));
+    console.log("str1.includes('are' )", str1.includes('are'));
+    console.log("str1.includes('Are' )", str1.includes('Are'));
+
+    console.log("str1.indexOf('are' )", str1.indexOf('are'));
+    console.log("str1.indexOf('Are' )", str1.indexOf('Are'));
+
+    console.log("str1.lastIndexOf('how') ", str1.lastIndexOf('how'));
+    console.log("'a'.localcompare('b') ", 'a'.localeCompare('b'));
+    console.log("'a'.localcompare('a') ", 'a'.localeCompare('a'));
+    console.log("'b'.localcompare('a') ", 'b'.localeCompare('a'));
+    console.log(" 'hello' .padStart(10) ", 'hello'.padStart(10));
+    console.log(" 'hello' .padStart(10) ", 'hello'.padStart(10, '_'));
+</script>
+
+</html>

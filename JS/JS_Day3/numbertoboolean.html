@@ -1,0 +1,30 @@
+<html>
+<script>
+    let value = NaN;
+    let result = !!value;
+    console.log("Nan ", result);
+    // result => false
+    // number မှာ false ဖြစ်တာ ၂ မျိုးရှိတယ် (NaN နဲ့ 0 ), (NaN နဲ့ 0 ) ကလွဲရင် ကျန်တာ true, Infinity ဆိုလဲ true
+
+    value = 0;
+    result = !!value;
+    console.log("NaN ", result);
+    // result => false
+
+    value = -0;
+    result = !!value;
+    console.log("NaN ", result);
+    // result => false
+
+    value = 10;
+    result = !!value;
+    console.log("NaN ", result);
+    // result => true
+
+    value = Infinity;
+    result = !!value;
+    console.log("NaN ", result);
+    // result => true
+</script>
+
+</html>
