@@ -1,0 +1,36 @@
+<html>
+<script>
+    let str = "123";
+    let result = +str;
+    console.log("Result ", result);
+    // ပြောင်းလို့ရတဲ့ String ကို Number‌ ပြောင်းရင် Number ရ
+    // + sign ဆိုရင် number ပြောင်းတာ (+str)
+
+    // hello က ပြောင်းလို့မရတဲ့ String, ပြောင်းလို့မရတဲ့ String ကို Numberပြောင်းရင် NaN ရ 
+    result = +"hello";
+    console.log("Result ", result);
+
+    // empty String ကို Numberပြောင်းရင် 0 ရ 
+    result = +"";
+    console.log("Result ", result);
+
+    result = +"false";
+    console.log("Result ", result);
+
+    // String to Boolean
+    // !!(နော့နော့) က boolean ပြောင်းတာ, "" (empty String) ကို boolean ပြောင်းရင် Result က false
+    // truthy, falsy နဲ့ မှတ်တယ်, false ဖြစ်တာ "" (empty String) ပဲရှိတယ်, ကျန်တဲ့ကောင်တေ true
+    result = !!"";
+    console.log("Reault ", result);
+
+    // !!(နော့နော့) က boolean ပြောင်းတာ, "false"ကို boolean ပြောင်းရင် Result က true
+    result = !!"false";
+    console.log("Reault ", result);
+
+    // number to String
+    let value = -0;
+    result = "" + value;
+    console.log("Result", result);
+</script>
+
+</html>

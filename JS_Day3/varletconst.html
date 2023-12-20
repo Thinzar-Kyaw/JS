@@ -1,0 +1,43 @@
+<html>
+<script>
+    // hoisting လုပ်တယ်ဆိုတာ ဘာလဲဆိုရင် var c ဆိုတဲ့ statement လေးကို function ရဲ့ အပေါ်ဆုံးကို သွားပြီးတင်ပေးတာကို hoisting လုပ်တယ်လို့ခေါ်တယ်
+    // လိုင်း နံပါတ် ၉ မှာ ကြေညာပေမယ့် လိုင်း ၇ မှာ သွားပြီးခေါ်လို့ရနေခြင်းဖြစ်တယ်
+    function hello() {//var c;
+
+        {
+            console.log("C ", c);
+        }
+        //var c = 20; // variable ကြေညာ, var နဲ့ကြေညာတဲ့အတွက် hoisting လုပ်တယ်
+        {
+            var c = "Hello"; // redeclare လုပ်
+            let k = 100; // let & const က block scope ဖြစ်တယ်, block scope က redeclre  လုပ်လို့မရ
+            console.log("K is ", k);
+            //let k = 200; // block scope က same scope မှာ redeclare လုပ်လို့မရ different block scope မှာဆို redeclare လုပ်လို့ရ
+        }
+        let k = "Hello"; // different block scope
+        console.log("C ", c);
+        console.log("K is ", k);
+
+        const some_data = 10;//const က constant ဖြစ်တယ် တခါ ကြေညာပြီးရင် တခါ assign လုပ်ပီးရင် နောက်တခါ assign လုပ်လို့မရတော့ဘူး
+        //some_data = 20;
+    }
+    hello();
+    /* var သည် function scope ကိုပေးတယ် hoisting လုပ်ပေးတယ် redeclare လုပ်လို့ရတယ်
+    function scope ဆိုတာက variable ကို ဘယ်နေရာမှာကြေညာကြေညာ function ထဲက anywhere ကနေသုံးလို့ရ
+    var => function scope (function အစ ကနေ အဆုံး)
+        hoisting
+        redeclare
+    */
+    /*
+    block scope => hoisting မပေးဘူး, same block scope မှာ redeclare လုပ်လို့မရဘူး, different block scope မှာ redeclare လုပ်လို့ရ
+    */
+
+    /*
+    var မကြေညာပဲသုံးမယ်ဆိုရင် undeclare ဆိုရင် global scope လို့ခေါ်တယ်
+    var ကြေညာပြီးသုံးမယ်ဆိုရင် var က function scope လို့ခေါ်တယ်
+    let နဲ့ const ကို block scope လို့ခေါ်တယ်
+    */
+
+</script>
+
+</html>

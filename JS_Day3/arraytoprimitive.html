@@ -1,0 +1,24 @@
+<html>
+<script>
+    let arr = [10, 20, 30];
+    console.log("Arr ", arr[0]);
+    console.log("Arr ", arr[1]);
+
+    console.log("Join ", arr.join()); // ဘာမှမထည့်ရင် plain ဆိုရင် 10,20,30 ဆိုတဲ့ string ရ 
+    // array ရဲ့ join method က string ပါ ပါတဲ့ကောင်
+
+    console.log("Join ", [].join()); // empty array to join => result -> blank string ရ
+    console.log("+[] ", +[]); // empty array to convert number => result -> 0
+    console.log("+'' ", +''); // +'' (blank string) to convert number => result -> 0
+    console.log("+[10] ", +[10]); // one element to convert Number => result -> 10
+    console.log("+[10,20] ", +[10, 20]); // one element, two element to convert Number => result -> NaN
+
+
+    /* array ကို number ပြောင်းမယ်ဆိုရင် ToString ခေါ်တယ်, ToString မှ တဆင့် join ကိုခေါ်တယ်, အာ့မှ primitive ကိုပြန်ပြောင်းတယ်
+        array to boolean ဆိုလဲ ဒီ process ပဲ (ToString ခေါ်တယ်, ToString မှ တဆင့် join ကိုခေါ်တယ်, အာ့မှ primitive ကိုပြန်ပြောင်းတယ်)
+        array => ToString
+            join()       
+    */
+</script>
+
+</html>

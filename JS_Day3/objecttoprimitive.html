@@ -1,0 +1,33 @@
+<html>
+<script>
+    let money = {
+        value: "100",
+        location: "Anywhere",
+
+        valueOf: function () {
+            console.log('valueOf called');
+            return [10];
+        },
+        toString: function () {
+            console.log('ToString called');
+            return this.value;
+        },
+
+    };
+    let str = "" + money; // object ကို String ပြောင်းရင် ToString ရှိလားအရင်စစ်တယ် ရှိရင်ခေါ်တယ် မရှိရင်မခေါ်ဘူး
+    console.log("Str ", str);
+
+    let num = +money;
+    console.log("Num is ", num);
+
+    /* Object to String
+            valueOf ကို အရင်ကြည့်တယ် ကြည့်ပြီးတော့ valueOf မရှိဘူးဆိုရင် toString ကို သွားရှာတယ်, toString မရှိဘူးဆိုရင် default value ပြောင်း
+    */
+
+    /* object to number
+            object က toString ရှိလားစစ်တယ် မရှိဘူးဆိုရင် default return ပြန်တယ် => [object Object]
+            toString ရှိတယ်ဆိုရင် return value ကို Number အဖြစ် convert လုပ်ပေးတယ်
+    */
+</script>
+
+</html>

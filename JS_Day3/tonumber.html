@@ -1,0 +1,12 @@
+<html>
+<script>
+    let bigInt = Symbol(1000);
+    let num = Number(bigInt);
+    console.log("Num ", num); // Uncaught TypeError: Cannot convert a Symbol value to a number
+
+    bigInt = BigInt(1000);
+    num = +(bigInt);
+    console.log("Num ", num); // Uncaught TypeError: Cannot convert a BigInt value to a number
+</script>
+
+</html>

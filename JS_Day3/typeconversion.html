@@ -1,0 +1,25 @@
+<html>
+<script>
+    let str = "123";
+    let result = 3 + str;
+    console.log("Result", result);
+    console.log("Typeof Result ", typeof (result));
+
+    result = undefined + undefined;
+    console.log("Result ", result);
+
+    // null ကို number ပြောင်းတော့ 0, Result က 0 + 0 ဆိုတော့ 0
+    result = null + null;
+    console.log("Result ", result);
+
+    // null ကို number ပြောင်းတော့ 0, true ကို number ပြောင်းတော့ 1 , Result က 0 + 1 ဆိုတော့ 1
+    result = null + true;
+    console.log("Result ", result);
+
+    // null နဲ့ undefined နဲ့ ဆိုရင် + operator ရဲ့ sematic ကို ကြည့်ရမယ် null နဲ့ undefined ဆိုရင် string မပါတဲ့အတွက် number edition ကိုလုပ်တယ်
+    // null ဆို number ပြောင်းတော့ 0, undefined ကို number ပြောင်းတော့ NaN ရ, NaN နဲ့ ဘာပဲလုပ်လုပ် NaN ပဲရတယ်, အဲတော့ result က NaN
+    result = null + undefined;
+    console.log("Result ", result);
+</script>
+
+</html>

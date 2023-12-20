@@ -1,0 +1,16 @@
+<html>
+<script>
+    let str = new String("Hello");
+    String.prototype.toString = function () {
+        console.log("ToString called");
+        return this;
+    }
+    String.prototype.valueOf = function () {
+        console.log("valueOf called");
+        return this;
+    }
+    let data = +str;
+    console.log("Data ", data); // Uncaught TypeError: Cannot convert object to primitive value
+</script>
+
+</html>
