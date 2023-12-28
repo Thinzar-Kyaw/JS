@@ -1,0 +1,10 @@
+contorl flow
+    conditional
+    loop
+    jump
+
+
+if(expression) // truthy ဖြစ်ရင်
+    statement
+else(expression) // falsy ဖြစ်ရင်
+    statement

@@ -1,0 +1,30 @@
+2 = 10
+3 = 11
+
+1 0
+1 1
+1 0
+
+&&
+0 0 -> 0
+0 1 -> 0
+1 0 -> 0
+1 1 -> 1
+
+if LHS(left hand side) falsy, return LHS (ဘယ်ဘက်ကကောင်ပဲရမယ် eg: 0 1 ဆိုရင် return 0 ရ)
+else LHS truthly, return RHS (eg: 1 0 ဆိုရင် return 0)
+
+||
+0 0 -> 0
+0 1 -> 1
+1 0 -> 1
+1 1 -> 1
+
+if LHS(left hand side) falsy, return RHS 
+else LHS truthly, return LHS 
+
+^
+0 0 -> 0
+0 1 -> 1
+1 0 -> 1
+1 1 -> 0

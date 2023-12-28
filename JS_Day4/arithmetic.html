@@ -1,0 +1,21 @@
+<html>
+<script>
+    let a = 2 + 3 + 'hello';
+    console.log("A ", a);
+
+    let b = 'hello' + (2 + 3 + 4);
+    console.log("B ", b);
+
+    let obj = {
+        name: "TZK",
+        valueOf: function () {
+            console.log("ValueOf Invoked");
+            return 10;
+        }
+    };
+    a = 3 + obj;// object ကနေ primitive ပြောင်း
+    //string ? naumber arithmetic?
+    console.log("A ", a);
+</script>
+
+</html>

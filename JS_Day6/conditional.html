@@ -1,0 +1,19 @@
+<html>
+<script>
+    let num = 5;
+    if (num % 2 == 0) {
+        console.log("Even");
+    }
+    else {
+        console.log("Odd");
+    }
+    let result = (num % 2 == 0) ? 'Even' : 'Odd'; // conditional
+    console.log("result", result);
+
+    let k;
+    // k = k !== undefined ? k : 0;
+    let j = k ?? 0; // k ဟာ null နဲ့ undefined ဆိုရင် 0 ကို သုံးပါ မဟုတ်ဘူးဆိုရင် k ကိုပဲ သုံးပါလို့ အဓိပ္ပာယ်ရ
+    console.log("J", j);
+</script>
+
+</html>

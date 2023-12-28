@@ -1,0 +1,15 @@
+<html>
+<script>
+    let a = 10;
+    let b = 20;
+    [b, a] = [a, b];
+    console.log("A ", a, " B ", b);
+
+    let [c, e, ...d] = [10, 20, 30, 40]; // ...d ကို rest operatior လို့ခေါ်တယ်
+    console.log("C ", c, "E ", e, "d ", d);// C 10 E 20 d [30,40]
+
+    let [first, ...rest] = "Hello";
+    console.log("First ", first, "Rest", rest); // First H Rest['e','l','l','o']
+</script>
+
+</html>

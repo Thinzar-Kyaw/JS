@@ -1,0 +1,39 @@
+<html>
+<script>
+    function getTrue() {
+        console.log("getTrue called");
+        return true;
+    }
+    function getFalse() {
+        console.log("getFalse called");
+        return false;
+    }
+    console.log("getFalse() && getTrue() ", getFalse() && getTrue());
+    console.log("getFalse() & getTrue() ", getFalse() & getTrue()); // နှစ်ဖက်စလုံးကို evaluate လုပ်ချင်တယ်ဆိုရင် boolean bitwise '&' ကို သုံး, bitwise & က big value ကို return ပြန်ပေးတယ်
+
+    let Module = window.MyModule || {
+        method: function () {
+            console.log("Module method");
+        }
+    };
+    // window.Mymodule ရှိရင်ယူသုံးမယ် မရှိရင် အသစ်ပြန်ဆောက်မယ် လို့ အဓိပ္ပာယ်ရ
+
+    function getUserProfileDetail() {
+        console.log("Get user profile detail");
+    }
+    let userExit = true;
+    /*if (userExit) {
+        getUserProfileDetail();
+    }*/
+    // ဒီအတိုင်းရေးလဲရ
+    userExit && getUserProfileDetail();
+
+    console.log("!true", !true);
+    console.log("!'true'", !"true");
+    console.log("!'false'", !"false");
+
+    let myBoolean = !!{};// !! တွေ့ရင် boolean အနေနဲ့ typecast လုပ်တယ်
+    console.log("!!{}", myBoolean);
+</script>
+
+</html>
